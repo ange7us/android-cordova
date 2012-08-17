@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width
+						           ,height=device-height
+						           ,initial-scale=1.0
+						           ,maximum-scale=1.0
+						           ,user-scalable=no;" />
+	<title>Cordova</title>
+	<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+	
+	<link rel="stylesheet" href="jquery.contextMenu.css" />
+	<script src="jquery.contextMenu.js"></script>
+	<script src="jquery-1.4.2.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).bind("mobileinit", function(){
+		  // Se dispara primero que todo. Util para variables eh inicializaciones
+			console.log("mobileinit");
+		});
+			
+		$(document).live( 'pageinit',function(event){
+		  alert( 'This page was just enhanced by jQuery Mobile!' );
+		});
+		
+		document.addEventListener("deviceready",onDeviceReady,false);
+		// once the device ready event fires, you can safely do your thing!
+		function onDeviceReady() {
+			alert("PhoneGap is now loaded!");
+			
+		    console.log("Device ready, you can now access the PhoneGap library.");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Hello World</h1>
+</body>
+
+</html>
