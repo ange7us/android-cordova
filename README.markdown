@@ -5,12 +5,12 @@
 Proyecto creado con el comando:
 
 
-`mvn archetype:generate 
-   -DarchetypeArtifactId=android-quickstart
-   -DarchetypeGroupId=de.akquinet.android.archetypes 
-   -DarchetypeVersion=1.0.6 
-   -DgroupId=your.company 
-   -DartifactId=cordova-primer-app`
+`mvn archetype:generate `
+`   -DarchetypeArtifactId=android-quickstart`
+`   -DarchetypeGroupId=de.akquinet.android.archetypes `
+`   -DarchetypeVersion=1.0.6 `
+`   -DgroupId=your.company `
+`   -DartifactId=cordova-primer-app`
 
 
 Importar el proyecto en Eclipse:
